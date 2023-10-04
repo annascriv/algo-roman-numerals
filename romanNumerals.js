@@ -15,26 +15,10 @@ function toRomanLazy(num) {
     num-=ind*romanNumeralToArabic[i];
     output+=i.repeat(ind);
   }
- // let romanNumeralPriorityOrder = ['M','D','C','L','X','V','I'];
-// for (i in romanNumeralToArabic) {
-//   while (num >= romanNumeralToArabic[i]) {
-//     output+=i;
-//     num-=romanNumeralToArabic[i]
 
-//   }
-// }
   return output;
   } 
 
-  // const divider = (numeral) => {
-  // output+=Math.floor(numeral/num)
-  // num-Math.floor(numeral/num)
-  // }
-  
-  //romanNumeralPriorityOrder.map(divider)
-  
-
-console.log(toRomanLazy(100))
 function toRoman(num) {
   let output = "";
   let romanNumeralToArabic = {
